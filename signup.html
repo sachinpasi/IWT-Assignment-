@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./signup.css" type="text/css" media="all">
+</head>
+<body>
+<section class="bg-cover">
+    <div class="overlay">
+    <div class="logo">
+        <a href="signup.html" ><img src="./oist-logo.png"></a>
+    </div>
+   
+    <div class="form-section">
+        <div class="heading">
+            <label>Complete Your Registration </label>
+            <br><br>
+        </div>
+        
+        <center><label><b>Basic Details : </b></label><br></center>
+        <label>First Name : <input type="text" name="firstname" required="required"></label><br>
+        <label>Middle Name : <input type="text" name="middelname" required="required"> </label><br>
+        <label>Last Name : <input type="text" name="lastname" required="required"></label>
+        <label>  </label> <br>
+        <label>Course : <select>
+            <option>...</option>
+            <option>BE</option>
+            <option>B.TECH</option>
+            <option>M.TECH</option>
+            <option>B.ARC</option>
+            <option>B.PHARMA</option>
+        </select></label><br>
+
+        <form>
+            <label>Gender : </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </form> 
+
+        <label>Phone No : <input type="tel"  required="required"></label><br>
+
+        <label>Address : <textarea rows="4" cols="50" name="address"></textarea></label>
+        <center><b>Credentials Details : </b></center>
+        <label>Email : <input type="email" required="required"> </label><br>
+        <label>Password : <input type="password" required ></label><br>
+        <label>Re-Type Password : <input type="password" required ></label>
+        <br><br>
+        
+        <center><label><b>Academic Details : </b></label></center>
+
+        <label>10th Class Percentage : <input type="number">%</label><br>
+        <label>10th Board : <input type="text"></label><br>
+        <label>10th Passing Year : <input type="number"></label><br>
+        <label>12th Class Percentage : <input type="number">%</label><br>
+        <label>12th Board : <input type="text"></label><br>
+        <label>12th Passing Year : <input type="number"></label>
+
+        
+    </div>
+    
+    <input type="submit" class="submit-button" onclick="return confirm('Successfully Submitted!')" />
+    
+    </div>   
+</section>
+
+
+    
+</body>
+</html>
